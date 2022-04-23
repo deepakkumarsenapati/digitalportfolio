@@ -10,3 +10,10 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@media only screen and (min-width: 1360px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}

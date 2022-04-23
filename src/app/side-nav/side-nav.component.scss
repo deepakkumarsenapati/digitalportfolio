@@ -83,3 +83,39 @@
   top: 0;
   z-index: 1;
 }
+
+@media only screen and (min-width: 1360px) {
+  .sidenav {
+    width: 38rem;
+
+    .nav-list {
+      .user {
+        img {
+          height: 12rem;
+          width: 12rem;
+          margin-bottom: 0.5rem;
+          padding: 0.5rem;
+        }
+        .name {
+          font-size: 3rem;
+        }
+        .post {
+          font-size: 1.8rem;
+        }
+      }
+      .navbar {
+        ul {
+          padding: 0 2rem;
+          margin: 0;
+          li {
+            a {
+              padding: 1rem;
+              margin: 1rem 0;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
