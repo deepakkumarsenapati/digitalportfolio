@@ -1,0 +1,22 @@
+<section class="education"
+         id="education">
+  <h1 class="heading">my <span>qualification</span></h1>
+
+  <div class="box-container">
+    <div class="box feature-box"
+         *ngFor="let education of educations">
+      <i class="fas fa-graduation-cap"></i>
+      <!-- <i class="fas fa-briefcase"></i> -->
+      <div class="period">
+        <span>{{ education.duration }}</span>
+      </div>
+      <h3>{{ education.courseName }}</h3>
+      <div>
+        <p>{{ education.university }}</p>
+      </div>
+    </div>
+  </div>
+
+  <a [routerLink]="['/experience']"
+     class="float-button"><button class="btn">know more <i class="fas fa-briefcase"></i></button></a>
+</section>

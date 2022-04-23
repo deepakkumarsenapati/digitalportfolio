@@ -1,0 +1,13 @@
+<section class="publications">
+  <h1 class="heading"><span>Seminars And Conferences Attended</span></h1>
+
+  <div class="row">
+    <div class="content feature-box-small"
+         *ngFor="let publication of publications">
+      <span> {{ publication.publicationDetails }}</span>
+    </div>
+  </div>
+
+  <a [routerLink]="['/contact']"
+     class="float-button"><button class="btn">know more</button></a>
+</section>

@@ -1,0 +1,63 @@
+@import "./../../../scss/utility";
+@import "./../../../scss/button";
+@import "./../../../scss/variable";
+
+.contact {
+  .row {
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .content {
+      flex: 1 1 30rem;
+      padding: 4rem;
+      padding-bottom: 0;
+
+      .title {
+        text-transform: uppercase;
+        color: $color-black;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .info {
+        h3 {
+          display: flex;
+          align-items: center;
+          font-size: 2rem;
+          color: $color-black;
+          padding: 1rem 0;
+          font-weight: normal;
+
+          i {
+            padding-right: 1rem;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      flex: 1 1 45rem;
+      padding: 2rem;
+      margin: 2rem;
+      margin-bottom: 4rem;
+      .box {
+        border: 2px solid $color-primary;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        background: $color-grey-light-2;
+        color: $color-black;
+        text-transform: none;
+        font-size: 1.7rem;
+        width: 100%;
+
+        &:focus {
+          outline: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+}
