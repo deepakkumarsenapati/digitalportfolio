@@ -11,37 +11,26 @@
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 0 15rem;
-  position: relative;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: $color-black;
     span {
       text-transform: uppercase;
-      font-weight: 700;
       display: inline-block;
-      background-image: linear-gradient(
-        to right,
-        rgb(126, 213, 111),
-        rgb(40, 180, 133)
-      );
-      background-clip: text;
-      color: transparent;
-      letter-spacing: 0.2rem;
     }
   }
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $color-black;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: $color-black;
     padding: 1rem 0;
     line-height: 2.8rem;
-    text-align: left;
+    text-align: justify;
   }
 }

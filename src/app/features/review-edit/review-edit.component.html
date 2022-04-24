@@ -1,13 +1,10 @@
 <section class="publications">
-  <h1 class="heading"><span>Seminars And Conferences Attended</span></h1>
+  <h1 class="heading gradient-text"> reviewer and editor in aditorial boards </h1>
 
-  <div class="row">
-    <div class="content feature-box-small"
+  <div class="margin-top-6">
+    <div class="feature-box-small"
          *ngFor="let publication of publications">
       <span> {{ publication.publicationDetails }}</span>
     </div>
   </div>
-
-  <a [routerLink]="['/membership']"
-     class="float-button"><button class="btn">know more</button></a>
 </section>

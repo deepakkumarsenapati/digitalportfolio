@@ -1,4 +1,3 @@
-import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { MembershipComponent } from './features/membership/membership.component';
 import { ReviewEditComponent } from './features/review-edit/review-edit.component';
@@ -54,7 +53,7 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
   },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: AboutComponent },
 ];
 
 @NgModule({

@@ -3,27 +3,14 @@
 .heading {
   text-transform: capitalize;
   text-align: center;
-  margin: 0 6rem;
   font-size: 4rem;
   padding: 1rem;
   color: $color-grey-dark-3;
-
-  span {
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2rem;
-  }
 
   &::after {
     content: "";
     display: block;
     height: 2px;
-    margin-top: 0.8rem;
     background: linear-gradient(
       to right,
       $color-primary-light,
@@ -32,11 +19,65 @@
   }
 }
 
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+
+.box {
+  width: 27rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid $color-primary;
+  position: relative;
+  .period {
+    text-align: right;
+    span {
+      font-size: 1.3rem;
+      background: $color-primary;
+      color: $color-white;
+      border-radius: 5rem;
+      padding: 0.5rem 2.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+    padding-top: 1.5rem;
+    text-align: right;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $color-grey-dark-2;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: $color-primary;
+  }
+}
+
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba($color-white, 0.8);
   font-size: 1.5rem;
-  text-align: center;
-  box-shadow: rgb(0 0 0 / 15%) 0px 1.5rem 4rem;
+  box-shadow: $box-shadow;
   padding: 2.5rem;
   border-radius: 3px;
   transition: transform 0.3s ease 0s;
@@ -47,12 +88,15 @@
 }
 
 .feature-box-small {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  box-shadow: rgb(0 0 0 / 15%) 0px 1.5rem 4rem;
+  background-color: rgba($color-white, 0.8);
+  box-shadow: $box-shadow;
+  border: 1px solid rgba($color-black, 15%);
   padding: 2.5rem;
+  text-align: justify;
   border-radius: 3px;
   transition: transform 0.3s ease 0s;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
 
   &:hover {
     transform: translateY(-0.6rem);
@@ -60,7 +104,7 @@
   }
 }
 
-.heading-primary {
+.gradient-text {
   background-image: linear-gradient(
     to right,
     $color-primary-light,
@@ -69,5 +113,9 @@
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
-  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.margin-top-6 {
+  margin-top: 6rem;
 }
