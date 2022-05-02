@@ -6,10 +6,10 @@ import { AppService } from './app.service';
 @Injectable({
   providedIn: 'root',
 })
-export class AboutService {
+export class ProjectService {
   constructor(private http: HttpClient, private appService: AppService) {}
 
-  getAbout(): Observable<any> {
-    return this.http.get(`${this.appService.appURL}about.json`);
+  getProject(): Observable<any> {
+    return this.http.get(`${this.appService.appURL}projects.json`);
   }
 }

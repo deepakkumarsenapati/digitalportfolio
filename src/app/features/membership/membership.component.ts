@@ -1,3 +1,4 @@
+import { MembershipService } from './../../services/membership.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,30 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./membership.component.scss'],
 })
 export class MembershipComponent implements OnInit {
-  publications = [
-    {
-      publicationDetails: `Student Member, Institute of Electrical and Electronics Engineers (IEEE).
-      `,
-    },
-    {
-      publicationDetails: `Member, International Association of Engineers (IAENG)
-      `,
-    },
-    {
-      publicationDetails: `Member, Universal Scientific Education and Research Network (USERN)
-      `,
-    },
-    {
-      publicationDetails: `Member, Bharati Vidyapeeth's Institute of. Computer Applications and
-      Management (BVICAM)`,
-    },
-    {
-      publicationDetails: `Member, Computer Science Teachers Association (CSTA)
-      `,
-    },
-  ];
+  memberships: any;
 
-  constructor() {}
+  constructor(private membershipService: MembershipService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.membershipService.getMembership().subscribe((resp) => {
+      this.memberships = resp;
+    });
+  }
 }

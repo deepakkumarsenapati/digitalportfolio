@@ -1,16 +1,15 @@
 <section class="publications">
-  <h1 class="heading gradient-text">Publications</h1>
-
+  <h1 class="heading gradient-text">{{publications?.headingGradientText}}</h1>
   <div class="margin-top-6">
     <div class="feature-box-small"
-         *ngFor="let publication of publications">
+         *ngFor="let publication of publications?.publicationList">
       <div class="chip">
-        Published
+        {{publication?.publicationStatus}}
       </div>
-      <div class="feature-box-small--content"> {{ publication.publicationDetails }}</div>
-      <a href="https://www.google.com/"
+      <div class="feature-box-small--content"> {{ publication?.publicationDetails }}</div>
+      <a href="{{publication?.externalLink}}"
          target="_blank"
-         class="btn--link align-right-bottom">Read more ...
+         class="btn--link align-right-bottom">{{publication?.linkText}}
       </a>
     </div>
   </div>

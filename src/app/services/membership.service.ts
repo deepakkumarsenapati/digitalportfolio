@@ -6,10 +6,10 @@ import { AppService } from './app.service';
 @Injectable({
   providedIn: 'root',
 })
-export class AboutService {
+export class MembershipService {
   constructor(private http: HttpClient, private appService: AppService) {}
 
-  getAbout(): Observable<any> {
-    return this.http.get(`${this.appService.appURL}about.json`);
+  getMembership(): Observable<any> {
+    return this.http.get(`${this.appService.appURL}memberships.json`);
   }
 }

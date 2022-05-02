@@ -1,22 +1,12 @@
 <section class="projects">
-  <h1 class="heading gradient-text"> Projects </h1>
-
+  <h1 class="heading gradient-text"> {{projects?.headingGradientText}} </h1>
   <div class="margin-top-6">
-    <div class="feature-box-small">
-      <div class="feature-box-small--content">Thesis on DIGITAL WATERMARKING in
-        Intelligence, Cryptography at my M.Tech</div>
-      <a href="https://www.google.com/"
+    <div class="feature-box-small"
+         *ngFor="let project of projects?.projectList">
+      <div class="feature-box-small--content">{{project?.description}}</div>
+      <a href="{{project?.externalLink}}"
          target="_blank"
-         class="btn--link align-right-bottom">Read more ...
-      </a>
-    </div>
-    <div class="content feature-box-small">
-      <div class="feature-box-small--content">Project on
-        ONLINE TESTING SYSTEM using C, C++
-        languages & Computer Graphics at my B.Tech</div>
-      <a href="https://www.google.com/"
-         target="_blank"
-         class="btn--link align-right-bottom">Read more ...
+         class="btn--link align-right-bottom">{{project?.linkName}}
       </a>
     </div>
   </div>

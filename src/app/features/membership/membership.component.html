@@ -1,13 +1,12 @@
 <section class="publications">
-  <h1 class="heading gradient-text"> membership in societies </h1>
-
+  <h1 class="heading gradient-text">{{memberships?.headingGradientText}}</h1>
   <div class="margin-top-6">
     <div class="feature-box-small"
-         *ngFor="let publication of publications">
-      <div class="feature-box-small--content"> {{ publication.publicationDetails }}</div>
-      <a href="https://www.google.com/"
+         *ngFor="let membership of memberships?.membershipList">
+      <div class="feature-box-small--content"> {{ membership?.publicationDetails }}</div>
+      <a href="{{ membership?.externalLink }}"
          target="_blank"
-         class="btn--link align-right-bottom">Read more ...
+         class="btn--link align-right-bottom">{{ membership?.linkText }}
       </a>
     </div>
   </div>
