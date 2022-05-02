@@ -1,11 +1,13 @@
 @import "./../../../scss/variable";
 @import "./../../../scss/button";
 @import "./../../../scss/utility";
+
 .about-container {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .about {
   flex: 1;
   display: flex;
@@ -15,6 +17,7 @@
   h1 {
     font-size: 3rem;
     color: $color-black;
+
     span {
       text-transform: uppercase;
       display: inline-block;
@@ -32,5 +35,17 @@
     padding: 1rem 0;
     line-height: 2.8rem;
     text-align: justify;
+  }
+}
+
+.research-link {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+
+  li {
+    display: inline-block;
   }
 }

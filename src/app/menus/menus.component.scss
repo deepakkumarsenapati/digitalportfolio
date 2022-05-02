@@ -28,28 +28,24 @@
       font-weight: 700;
       color: $color-black;
     }
-    .post {
-      font-size: 1.6rem;
-      color: $color-black;
-    }
   }
 
   .navbar {
     ul {
       list-style: none;
+
       li {
         text-align: center;
+
         a {
           text-decoration: none;
           text-transform: uppercase;
           display: block;
           padding: 0.8rem;
           margin: 1.3rem 0;
-          background: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-          );
+          background: linear-gradient(to right bottom,
+              $color-primary-light,
+              $color-primary-dark);
           color: $color-white;
           font-size: 2rem;
           border-radius: 5rem;

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
 import { AboutComponent } from './features/about/about.component';
 import { EducationComponent } from './features/education/education.component';
 import { ExperiencesComponent } from './features/experiences/experiences.component';
@@ -15,6 +14,7 @@ import { MembershipComponent } from './features/membership/membership.component'
 import { ContactComponent } from './features/contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MenusComponent } from './menus/menus.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,12 @@ import { MenusComponent } from './menus/menus.component';
     LayoutComponent,
     MenusComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
