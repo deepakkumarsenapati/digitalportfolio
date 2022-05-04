@@ -7,7 +7,8 @@
   <nav class="navbar">
     <ul>
       <li *ngFor="let link of menu?.links">
-        <a [routerLink]="link?.url"
+        <a [routerLink]='"."'
+           [fragment]="link?.url"
            class="btn btn--green">{{link?.name}}</a>
       </li>
     </ul>
